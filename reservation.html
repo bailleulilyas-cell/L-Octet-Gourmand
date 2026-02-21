@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver une Table | L'Octet Gourmand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">L'Octet <span>Gourmand</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">La Carte</a></li>
+                <li><a href="reservation.html" class="active">Réservations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; color: #d4af37;">Réservez votre instant</h2>
+                    <p style="margin: 20px 0; color: #ccc;">Pour une expérience optimale, nous vous conseillons de réserver 48h à l'avance.</p>
+                    
+                    <div class="contact-details" style="margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
+                        <p><strong>📍 Adresse :</strong> 42 Rue du Code, 75000 Paris</p>
+                        <p><strong>📞 Téléphone :</strong> 01 23 45 67 89</p>
+                        <p><strong>✉️ Email :</strong> bailleulilyas@gmail.com</p>
+                    </div>
+                </div>
+                
+                <form action="https://formsubmit.co/bailleulilyas@gmail.com" method="POST" class="booking-form">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="https://l-octet-gourmand.netlify.app/reservation.html">
+                    
+                    <div class="input-group">
+                        <input type="text" name="nom" placeholder="Nom Complet" required>
+                        <input type="email" name="email" placeholder="Votre Email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="number" name="convives" placeholder="Nombre de personnes" min="1" max="10" required>
+                        <input type="date" name="date" id="datePicker" required>
+                    </div>
+
+                    <textarea name="message" placeholder="Demandes particulières (Allergies, anniversaire...)" style="width: 100%; margin-bottom: 20px;"></textarea>
+
+                    <button type="submit">Confirmer la Réservation</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 L'Octet Gourmand | 📍 42 Rue du Code, Paris</p>
+    </footer>
+
+    <script src="codesjava.js"></script>
+</body>
+</html>
