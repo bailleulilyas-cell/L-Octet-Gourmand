@@ -3,60 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Octet Gourmand | Bistro Moderne</title>
+    <title>L'Octet Gourmand | Expérience Gastronomique</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="top-bar">
+        <span>📍 42 Rue du Code, Paris</span>
+        <a href="tel:0123456789">📞 Appeler pour réserver : 01 23 45 67 89</a>
+    </div>
+
     <section class="hero">
         <div class="hero-content">
             <h1>L'Octet Gourmand</h1>
-            <p>L'alliance de la tradition et de l'innovation</p>
+            <p>L'excellence dans chaque ligne de saveurs</p>
             <a href="#reservation" class="btn-main">Réserver une table</a>
         </div>
     </section>
 
     <section id="menu" class="container">
-        <h2 class="section-title">La Carte</h2>
+        <h2 class="section-title">La Carte du Moment</h2>
         <div class="menu-grid">
             <div class="menu-item">
-                <h3>Entrées</h3>
-                <p>Velouté de saison • 12€</p>
-                <p>Carpaccio de Saint-Jacques • 16€</p>
+                <span class="price">16€</span>
+                <h3>Carpaccio de Saint-Jacques</h3>
+                <p>Huile de truffe blanche et zestes de citron vert.</p>
             </div>
             <div class="menu-item">
-                <h3>Plats</h3>
-                <p>Le Burger "Source Code" • 22€</p>
-                <p>Risotto aux Truffes • 26€</p>
+                <span class="price">26€</span>
+                <h3>Le Risotto Algorithme</h3>
+                <p>Champignons sauvages, parmesan 24 mois et émulsion de cèpes.</p>
             </div>
         </div>
     </section>
 
     <section id="reservation" class="container">
         <div class="card-resa">
-            <h2 class="section-title">Réservation</h2>
-            <form action="https://formsubmit.co/bailleulilyas@gmail.com" method="POST">
+            <div class="resa-header">
+                <h2>Table de prestige</h2>
+                <p>Réservez votre instant privilégié</p>
+            </div>
+            
+            <form action="https://formsubmit.co/ton-email@gmail.com" method="POST">
                 <input type="text" name="_honey" style="display:none">
                 <input type="hidden" name="_next" value="https://ton-pseudo.github.io/ton-projet/">
                 
-                <div class="form-group">
-                    <input type="text" name="nom" placeholder="Nom complet" required>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Votre Nom</label>
+                        <input type="text" name="nom" placeholder="Ex: Jean Dupont" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre d'invités</label>
+                        <input type="number" name="convives" min="1" max="10" value="2" required>
+                    </div>
                 </div>
+
                 <div class="form-group">
-                    <input type="number" name="convives" placeholder="Nombre de personnes" required>
+                    <label>Choisir une date (Max 3 mois à l'avance)</label>
+                    <input type="date" name="date" id="datePicker" required>
                 </div>
-                <div class="form-group">
-                    <input type="date" name="date" required>
-                </div>
-                <button type="submit" class="btn-submit">Confirmer ma venue</button>
+
+                <button type="submit" class="btn-submit">Valider la réservation</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <p>📍 42 Rue du Code, 75000 Paris</p>
-        <p>📞 01 23 45 67 89 | Ouvert du Mardi au Samedi</p>
+        <p>© 2026 L'Octet Gourmand - Ouvert du Mardi au Samedi</p>
     </footer>
 
     <script src="codesjava.js"></script>
