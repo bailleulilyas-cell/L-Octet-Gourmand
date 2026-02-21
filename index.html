@@ -3,75 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Octet Gourmand | Expérience Gastronomique</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>L'Octet Gourmand | Haute Gastronomie & Innovation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="top-bar">
-        <span>📍 42 Rue du Code, Paris</span>
-        <a href="tel:0123456789">📞 Appeler pour réserver : 01 23 45 67 89</a>
-    </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">L'Octet <span>Gourmand</span></div>
+            <ul class="nav-links">
+                <li><a href="#menu">La Carte</a></li>
+                <li><a href="#experience">L'Expérience</a></li>
+                <li><a href="#reservation">Réservations</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>L'Octet Gourmand</h1>
-            <p>L'excellence dans chaque ligne de saveurs</p>
-            <a href="#reservation" class="btn-main">Réserver une table</a>
+            <span class="subtitle">Une étoile au cœur de la tech</span>
+            <h1>L'Art de la Table <br>Rencontre le Futur</h1>
+            <p>Découvrez une cuisine sensorielle où chaque plat est une architecture de saveurs précises.</p>
+            <div class="hero-btns">
+                <a href="#reservation" class="btn-primary">Réserver une table</a>
+                <a href="#menu" class="btn-secondary">Voir la Carte</a>
+            </div>
         </div>
     </section>
 
     <section id="menu" class="container">
-        <h2 class="section-title">La Carte du Moment</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <span class="price">16€</span>
-                <h3>Carpaccio de Saint-Jacques</h3>
-                <p>Huile de truffe blanche et zestes de citron vert.</p>
+        <h2 class="section-title">Signature Gastronomique</h2>
+        <div class="menu-sections">
+            <div class="menu-cat">
+                <h3>Les Préludes</h3>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?auto=format&fit=crop&w=150&q=80" alt="Entrée">
+                    <div class="item-info">
+                        <h4>Saint-Jacques au Yuzu <span>19€</span></h4>
+                        <p>Fines lamelles de noix de Saint-Jacques, perles de yuzu et émulsion de gingembre frais.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=150&q=80" alt="Entrée">
+                    <div class="item-info">
+                        <h4>L'Asperge Royale <span>17€</span></h4>
+                        <p>Asperges blanches de saison, sabayon au beurre noisette et éclats de noisettes grillées.</p>
+                    </div>
+                </div>
             </div>
-            <div class="menu-item">
-                <span class="price">26€</span>
-                <h3>Le Risotto Algorithme</h3>
-                <p>Champignons sauvages, parmesan 24 mois et émulsion de cèpes.</p>
+
+            <div class="menu-cat">
+                <h3>Les Compositions</h3>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=150&q=80" alt="Plat">
+                    <div class="item-info">
+                        <h4>Le Filet "Binary" <span>34€</span></h4>
+                        <p>Filet de bœuf maturé, réduction de vin rouge au cacao, purée de panais onctueuse.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=150&q=80" alt="Plat">
+                    <div class="item-info">
+                        <h4>Cabillaud en Croûte d'Or <span>29€</span></h4>
+                        <p>Dos de cabillaud sauvage, croûte d'herbes fines, risotto noir à l'encre de seiche.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section id="experience" class="parallax-section">
+        <div class="parallax-content">
+            <h2>Une Immersion Totale</h2>
+            <p>Notre restaurant n'est pas qu'une adresse, c'est une destination où la lumière, le son et le goût s'accordent.</p>
+        </div>
+    </section>
+
     <section id="reservation" class="container">
-        <div class="card-resa">
-            <div class="resa-header">
-                <h2>Table de prestige</h2>
-                <p>Réservez votre instant privilégié</p>
+        <div class="booking-wrapper">
+            <div class="booking-info">
+                <h2>Votre Table vous Attend</h2>
+                <p>Pour garantir la qualité de notre service, nous limitons le nombre de couverts par service.</p>
+                <div class="contact-details">
+                    <p>📍 42 Rue du Code, Paris</p>
+                    <p>📞 01 23 45 67 89</p>
+                    <p>✉️ bailleulilyas@gmail.com</p>
+                </div>
             </div>
             
-            <form action="https://formsubmit.co/bailleulilyas@gmail.com" method="POST">
-                <input type="text" name="_honey" style="display:none">
+            <form action="https://formsubmit.co/bailleulilyas@gmail.com" method="POST" class="booking-form">
                 <input type="hidden" name="_next" value="https://l-octet-gourmand.netlify.app/">
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Votre Nom</label>
-                        <input type="text" name="nom" placeholder="Ex: Jean Dupont" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Nombre d'invités</label>
-                        <input type="number" name="convives" min="1" max="10" value="2" required>
-                    </div>
+                <div class="input-group">
+                    <input type="text" name="nom" placeholder="Votre Nom Complet" required>
+                    <input type="email" name="email" placeholder="Email de contact" required>
                 </div>
-
-                <div class="form-group">
-                    <label>Choisir une date (Max 3 mois à l'avance)</label>
+                <div class="input-group">
+                    <input type="number" name="convives" placeholder="Nombre de personnes" min="1" max="10" required>
                     <input type="date" name="date" id="datePicker" required>
                 </div>
-
-                <button type="submit" class="btn-submit">Valider la réservation</button>
+                <textarea name="message" placeholder="Demande particulière (Allergies, Anniversaire...)"></textarea>
+                <button type="submit">Confirmer la Réservation</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 L'Octet Gourmand - Ouvert du Mardi au Samedi</p>
+        <p>© 2026 L'Octet Gourmand | <a href="#">Mentions Légales</a></p>
     </footer>
 
     <script src="codesjava.js"></script>
